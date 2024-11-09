@@ -16,6 +16,12 @@
   height: 69px;
   align-items: center;
 }
+.main-section__nav-container__logo {
+  width: 134px;
+}
+.main-section__logo {
+  width: 134px;
+}
 
 .nav-menu__list {
   display: flex;
