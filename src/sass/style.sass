@@ -24,7 +24,12 @@ $color-grey: #988C8C
         &__logo
             width: 134px
     &__logo
-        width: 134px         
+        width: 134px     
+
+    &__content-container
+        display: flex
+        position: relative
+
 .nav-menu
     &__list
         display: flex
@@ -54,6 +59,7 @@ $color-grey: #988C8C
         border-radius: 100px
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 25)
 
+
     &__rectangle-orange
             position: absolute 
             top: 240px
@@ -77,3 +83,67 @@ $color-grey: #988C8C
             height: 200px
             border-radius: 100px
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 25)
+            
+
+.right-wrapper
+    width: 377px
+    position: absolute
+    right: 50px
+    top: 30px
+    &__icons-box
+        margin-bottom: 2px
+        padding-left: 5px 
+    &__title
+        margin-bottom: 5px
+        
+    &__text
+        font-size: 16px
+        margin-bottom: 20px
+.icons
+    display: flex 
+   
+    &__item 
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border: 1px solid $color-blue
+        border-radius: 100px 
+        margin-right: 17px
+        &:last-child
+            margin-right: 0px
+    i
+        font-size: 27px  
+    
+.title
+    font-size: 72px
+    position: relative
+    &__hr
+        width: 57px 
+        position: absolute
+        margin: 0
+        bottom: 0px
+        border: 0px
+        border-top: 1px solid black
+
+.buttons
+    display: flex
+    flex-direction: row
+    
+    &__main-btn
+        margin-right: 12px
+        width: 197px
+        height: 54px
+        background-color: #FF8800
+        border: 0px
+        border-radius: 50px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 25)
+        color: white
+        font-size: 16px
+    &__icon-btn
+        display: flex
+        align-items: center
+        img
+            margin-right: 12px
+    
