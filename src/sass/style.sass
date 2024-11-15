@@ -14,7 +14,7 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
 
     
 .main-section
-    height: 800px
+    min-height: 800px
     background: #F0F0F0
     padding-top: 16px
     position: relative
@@ -188,4 +188,82 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
         height: 282px
 
         
-     
+.second-section
+    min-height: 700px
+    &__container
+        padding-top: 32px
+        position: relative
+        overflow: hidden
+    &__title
+        margin-bottom: 40px
+        padding-left: 100px
+    &__card-box
+        display: flex
+        width: 1143px
+        margin: 0 auto
+        margin-bottom: 25px
+    &__cards-item
+        margin-right: 30px
+        &:last-child
+            margin: 0
+    &__icons-box
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        width: 513px
+    &__icons-item
+        margin-right: 110px
+        &:last-child
+            margin: 0
+
+    &__first-elipse
+        position: absolute
+        top: 80px
+        right: -4px
+        z-index: -1
+
+    &__second-elipse
+        position: absolute
+        top: 364px
+        left: 15px
+        z-index: -1
+
+.cards-item
+    position: relative
+    width: 360px
+    height: 360px
+    background-color: #DBDBDB
+    border-radius: 10px
+    display: flex
+    align-items: flex-end
+    &__img
+        height: 335px
+        padding-left: 50px
+    
+    &__text
+        width: 280px
+        font-size: 36px
+        transform: rotate(90deg)
+        position: absolute
+        top: 222px
+        right: -50px
+
+
+
+.cards-item_orange
+    background-color: $color-orange
+
+.cards-item_blue
+    background-color: $color-blue
+
+
+.icons-item
+    display: flex
+    align-items: center
+    &__img
+        margin-right: 20px
+        width: 80px
+    &__text
+        font-size: 18px
+        span
+            font-size: 48px
