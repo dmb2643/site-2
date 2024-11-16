@@ -375,9 +375,10 @@ body::-webkit-scrollbar-track {
   z-index: -1;
 }
 .third-section__second-elipse {
+  z-index: -1;
   position: absolute;
-  right: -69px;
-  top: 24px;
+  right: -89px;
+  top: -106px;
 }
 
 .title__hr_top {
