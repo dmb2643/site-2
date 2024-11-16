@@ -2,6 +2,39 @@
     box-sizing: border-box
     user-select: none   
 
+@font-face 
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regular
+
+@font-face 
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+
+html
+    font-family: "MontserratT"
+    font-weight: regular
+    
+
+
+body::-webkit-scrollbar 
+  width: 12px/* Ширина вертикального скролла */
+  height: 12px /* Высота горизонтального скролла */
+
+
+body::-webkit-scrollbar-thumb 
+  background-color:  #FF662C/* Цвет ползунка */
+  border-radius: 6px /* Скругленные края */
+  border: 3px solid #f0f0f0 /* Отступы вокруг ползунка */
+
+
+body::-webkit-scrollbar-track 
+  background-color: #988C8C /* Цвет трека (заднего фона скроллбара) */
+  border-radius: 6px
+  display: none
+
+
 $color-blue: #2778F6
 $color-orange: #FF662C
 $color-grey: #988C8C
@@ -11,6 +44,7 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
     max-width: 1440px
     margin: 0 auto
     height: 900px
+    position: relative
 
     
 .main-section
@@ -48,6 +82,7 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
         display: flex
         flex-direction: row
     &__list-item
+        font-weight: bold
         margin-right: 64px
         font-size: 20px
         cursor: pointer
@@ -134,6 +169,7 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
     
 .title
     font-size: 72px
+    font-weight: bold
     position: relative
     &__hr
         width: 57px 
@@ -247,6 +283,7 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
         position: absolute
         top: 222px
         right: -50px
+        font-weight: bold
 
 
 
@@ -267,7 +304,7 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
         font-size: 18px
         span
             font-size: 48px
-
+            font-weight: bold
 
 .third-section
     overflow: hidden
@@ -301,8 +338,25 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
         z-index: -1
     &__second-elipse
         position: absolute
-        right: -120px
-        top: 120px
+        right: -69px
+        top: 24px
 
 .title__hr_top
     bottom: 75px
+
+
+.footer
+    &__img
+        position: absolute
+        left: -17px
+        bottom: -6px
+    &__container
+        min-height: 272px
+        max-height: 340px
+        display: flex
+        align-items: center
+        justify-content: end
+    &__wrapper
+        width: 550px
+    &__title
+        margin-bottom: 20px
