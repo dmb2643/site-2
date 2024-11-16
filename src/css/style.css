@@ -175,6 +175,10 @@ body::-webkit-scrollbar-track {
 }
 .icons i {
   font-size: 27px;
+  color: black;
+}
+.icons i a {
+  text-decoration: none;
 }
 
 .title {
