@@ -312,7 +312,7 @@ body::-webkit-scrollbar-track {
   font-size: 36px;
   transform: rotate(90deg);
   position: absolute;
-  top: 222px;
+  top: 166px;
   right: -50px;
   font-weight: bold;
 }
