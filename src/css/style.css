@@ -490,6 +490,114 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 991px) {
+  .title {
+    font-size: 60px;
+  }
+  .buttons {
+    margin-bottom: 15px;
+  }
+  .main-section {
+    min-height: 518px;
+  }
+  .main-section__content-container {
+    max-height: 419px;
+  }
+  .main-section__first-elipse {
+    right: 8px;
+  }
+  .main-section__second-elipse {
+    top: 412px;
+  }
+  .main-section .left-wrapper img {
+    width: 527px;
+    right: 73px;
+  }
+  .main-section .left-wrapper__rectangle-blue {
+    top: 46px;
+    left: 52px;
+    transform: rotate(-40deg);
+    width: 234px;
+    height: 130px;
+  }
+  .main-section .left-wrapper__rectangle-orange {
+    top: 93px;
+    left: 58px;
+    transform: rotate(-40deg);
+    width: 307px;
+    height: 130px;
+  }
+  .main-section .left-wrapper__rectangle-grey {
+    top: 152px;
+    left: 132px;
+    transform: rotate(-40deg);
+    width: 266px;
+    height: 130px;
+  }
+  .main-section .right-wrapper {
+    right: -51px;
+  }
+  .main-section .right-wrapper__title {
+    right: -77px;
+  }
+  .main-section .right-wrapper__icons-box {
+    justify-content: center;
+    padding: 0;
+  }
+  .main-section .right-wrapper__text {
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  .main-section .right-wrapper__button {
+    position: relative;
+    right: -85px;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+  }
+  .main-section .right-wrapper .buttons__main-btn {
+    margin: 0px 0px 6px 0px;
+  }
+  .second-section__first-elipse {
+    top: 64px;
+    right: -34px;
+  }
+  .second-section__second-elipse {
+    top: 304px;
+    left: -130px;
+  }
+  .third-section__text {
+    margin-bottom: 10px;
+  }
+  .third-section__container {
+    justify-content: center;
+  }
+  .third-section__right-title {
+    font-size: 50px;
+  }
+  .third-section .title__hr_top {
+    bottom: 53px;
+    width: 43px;
+  }
+  .footer {
+    margin: 0;
+  }
+  .footer__container {
+    margin: 0;
+    overflow: hidden;
+  }
+  .footer__img {
+    width: 500px;
+    left: -81px;
+  }
+  .footer__title {
+    font-size: 40px;
+    width: 290px;
+  }
+  .footer__wrapper {
+    width: 222px;
+    position: relative;
+    left: -60px;
+  }
   .container {
     width: 720px;
   }
