@@ -438,7 +438,7 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
 
     .third-section
         &__container
-              padding-left: 80px
+              padding-left: 122%
               margin-right: 45px
         &__right-wrapper
             max-width: 450px
@@ -507,6 +507,8 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
                 
 
     .second-section
+        &__container
+            padding-top: 15px
         &__first-elipse
             top: 64px
             right: -34px
@@ -516,6 +518,10 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
             left: -130px
   
         &__icons-box
+
+        &__title
+            margin-bottom: 18px
+            padding-left: 15px    
             
     .cards-item
         &__img
@@ -560,6 +566,36 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
 @media (max-width: 767px)
     .container
         width: 540px
+
+    .nav-menu
+        display: none
+    .hamburger
+        width: 30px
+        position: absolute
+        top: 40px
+        right: 30px 
+        height: 14px
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background: black
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin: 0
+    .hamburger_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+                
+                
+                
 
 @media (max-width: 575px)
     .container

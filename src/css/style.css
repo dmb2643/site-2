@@ -479,7 +479,7 @@ body::-webkit-scrollbar-track {
     top: 126px;
   }
   .third-section__container {
-    padding-left: 80px;
+    padding-left: 122%;
     margin-right: 45px;
   }
   .third-section__right-wrapper {
@@ -557,6 +557,9 @@ body::-webkit-scrollbar-track {
   .main-section .right-wrapper .buttons__main-btn {
     margin: 0px 0px 6px 0px;
   }
+  .second-section__container {
+    padding-top: 15px;
+  }
   .second-section__first-elipse {
     top: 64px;
     right: -34px;
@@ -564,6 +567,10 @@ body::-webkit-scrollbar-track {
   .second-section__second-elipse {
     top: 304px;
     left: -130px;
+  }
+  .second-section__title {
+    margin-bottom: 18px;
+    padding-left: 15px;
   }
   .third-section__text {
     margin-bottom: 10px;
@@ -605,6 +612,39 @@ body::-webkit-scrollbar-track {
 @media (max-width: 767px) {
   .container {
     width: 540px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger {
+    width: 30px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    height: 14px;
+  }
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: black;
+    margin-bottom: 4px;
+    transition: 1s all;
+  }
+  .hamburger span:last-child {
+    margin: 0;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
   }
 }
 @media (max-width: 575px) {
