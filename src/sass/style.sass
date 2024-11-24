@@ -564,11 +564,101 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
         width: 720px
 
 @media (max-width: 767px)
+    .title
+        font-size: 50px
+    .main-section
+        min-height: 374px
+        &__content-container
+             max-height: 300px
+        .left-wrapper
+            display: none
+        .right-wrapper
+            right: 212px
+            &__text
+                 width: 317px
+                 text-align: end
+            &__icons-box
+                    width: 362px    
+        &__first-elipse
+            top: 16px
+        
+    .second-section
+        min-height: 400px
+        &__card-box
+            &__icons-box
+        &__icons-item
+            margin-right: 0px
+        .icons-item__text
+            font-size: 16px
+            span
+                font-size: 38px
+        .icons-item__img 
+            width: 60px
+        &__first-elipse
+            top: 8px
+            right: -134px
+    
+    .third-section
+        min-height: 575px
+        &__container
+            padding-left: 10%
+        &__left-title
+            display: none
+        &__first-elipse
+            display: none
+        &__figure
+            width: 200px
+            height: 200px
+            left: -152px
+        &__second-elipse
+            right: -170px
+            top: -130px
+
+    .footer
+        &__container
+            min-height: 185px
+        &__title
+            font-size: 35px
+            margin-bottom: 8px
+        &__img
+            width: 300px
+            left: -58px
+            top: 27px
+        &__wrapper
+            left: -36px
+    
+    .cards-item
+        width: 200px
+        height: 200px
+        &__img
+            height: 193px
+        &__text
+            font-size: 20px
+            top: 75px
+            left: -15px
+
+   
+
     .container
         width: 540px
 
     .nav-menu
-        display: none
+        transition: 0.6s all
+        position: fixed
+        top: 0px
+        right: -100%
+        height: 100vh
+        width: 50%
+        background: $color-grey
+        z-index: 5
+        &__list
+            height: 100%
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+        &__list-item
+            margin-right: 0px
+            font-size: 22px
     .hamburger
         width: 30px
         position: absolute
@@ -594,8 +684,10 @@ $gradient: linear-gradient(45deg, rgb(65, 121, 226) 4%, rgb(77, 58, 58) 48%, rgb
             &:nth-child(3)
                 transform: translateY(3px) rotate(45deg)
                 
+    .nav-menu_active
+        right: 0px         
                 
-                
+    .main-section
 
 @media (max-width: 575px)
     .container

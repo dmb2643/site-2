@@ -610,11 +610,120 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 767px) {
+  .title {
+    font-size: 50px;
+  }
+  .main-section {
+    min-height: 374px;
+  }
+  .main-section__content-container {
+    max-height: 300px;
+  }
+  .main-section .left-wrapper {
+    display: none;
+  }
+  .main-section .right-wrapper {
+    right: 212px;
+  }
+  .main-section .right-wrapper__text {
+    width: 317px;
+    text-align: end;
+  }
+  .main-section .right-wrapper__icons-box {
+    width: 362px;
+  }
+  .main-section__first-elipse {
+    top: 16px;
+  }
+  .second-section {
+    min-height: 400px;
+  }
+  .second-section__icons-item {
+    margin-right: 0px;
+  }
+  .second-section .icons-item__text {
+    font-size: 16px;
+  }
+  .second-section .icons-item__text span {
+    font-size: 38px;
+  }
+  .second-section .icons-item__img {
+    width: 60px;
+  }
+  .second-section__first-elipse {
+    top: 8px;
+    right: -134px;
+  }
+  .third-section {
+    min-height: 575px;
+  }
+  .third-section__container {
+    padding-left: 10%;
+  }
+  .third-section__left-title {
+    display: none;
+  }
+  .third-section__first-elipse {
+    display: none;
+  }
+  .third-section__figure {
+    width: 200px;
+    height: 200px;
+    left: -152px;
+  }
+  .third-section__second-elipse {
+    right: -170px;
+    top: -130px;
+  }
+  .footer__container {
+    min-height: 185px;
+  }
+  .footer__title {
+    font-size: 35px;
+    margin-bottom: 8px;
+  }
+  .footer__img {
+    width: 300px;
+    left: -58px;
+    top: 27px;
+  }
+  .footer__wrapper {
+    left: -36px;
+  }
+  .cards-item {
+    width: 200px;
+    height: 200px;
+  }
+  .cards-item__img {
+    height: 193px;
+  }
+  .cards-item__text {
+    font-size: 20px;
+    top: 75px;
+    left: -15px;
+  }
   .container {
     width: 540px;
   }
   .nav-menu {
-    display: none;
+    transition: 0.6s all;
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    height: 100vh;
+    width: 50%;
+    background: #988C8C;
+    z-index: 5;
+  }
+  .nav-menu__list {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nav-menu__list-item {
+    margin-right: 0px;
+    font-size: 22px;
   }
   .hamburger {
     width: 30px;
@@ -645,6 +754,9 @@ body::-webkit-scrollbar-track {
   }
   .hamburger_active span:nth-child(3) {
     transform: translateY(3px) rotate(45deg);
+  }
+  .nav-menu_active {
+    right: 0px;
   }
 }
 @media (max-width: 575px) {
